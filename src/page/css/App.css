@@ -1,0 +1,16 @@
+/*
+.App {
+  text-align: center;
+}
+*/
+
+#menuCss {
+  list-style-type: none;
+  display: flex;
+}
+
+#menuLi {
+  color: black;
+  text-decoration: none;
+  margin: 30px;
+}
