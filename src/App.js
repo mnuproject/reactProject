@@ -145,7 +145,7 @@ function botReply(text) {
   }
   else if (text.includes("학교")) {
       window.location.replace("/page1");
-      speak("학교 페이지로 이동합니다");
+      speak("TodoList 페이지로 이동합니다");
   }
   else if (text.includes("도구")){
       window.location.replace("/page2");
@@ -160,12 +160,12 @@ function botReply(text) {
       speak("참고자료 페이지로 이동합니다");
   }
   else if (text.includes("소개")){
-      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
-      speak("음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
+      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, TodoList, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
+      speak("음성인식이나 입력을 통해\n홈, TodoList, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
   } 
   else {
-      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
-      speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
+      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, TodoList, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
+      speak("모르겠어요\n음성인식이나 입력을 통해\n홈, TodoList, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
   }
 }
 
