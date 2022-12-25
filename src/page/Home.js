@@ -132,29 +132,29 @@ function botReply(text) {
         window.location.replace("/");
         speak("메인 페이지로 이동합니다");
     }
-    else if (text.includes("학교")) {
-        window.location.replace("/page1");
-        speak("학교 페이지로 이동합니다");
+    else if (text.includes("투두리스트")) {
+        window.location.replace("/todoList");
+        speak("투두리스트 페이지로 이동합니다");
     }
-    else if (text.includes("도구")){
-        window.location.replace("/page2");
-        speak("도구 페이지로 이동합니다");
+    else if (text.includes("꾸미기")){
+        window.location.replace("/decoPage");
+        speak("꾸미기 페이지로 이동합니다");
     }
-    else if (text.includes("프로필")){
-        window.location.replace("/profile");
-        speak("프로필 페이지로 이동합니다");
+    else if (text.includes("학점 계산기")){
+        window.location.replace("/gradePage");
+        speak("학점 계산기 페이지로 이동합니다");
     }
     else if (text.includes("참고자료")){
-        window.location.replace("/ref");
+        window.location.replace("/reference");
         speak("참고자료 페이지로 이동합니다");
     }
     else if (text.includes("소개")){
-        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
-        speak("음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
+        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
+        speak("음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다");
     } 
     else {
-        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
-        speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
+        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
+        speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다");
     }
   }
 
@@ -173,7 +173,7 @@ function bot() {
             speak(msg1);
         }, 10);
 
-        var msg2 = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
+        var msg2 = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
         setTimeout(function() {
             document.getElementById("chatMsg").innerText = msg2;
             speak(msg2);

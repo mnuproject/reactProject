@@ -1,0 +1,29 @@
+#decoPage {
+  width: fit-content;
+  height: 650px;
+}
+
+#title {
+  width: 1390px;
+  margin: 50px;
+  font-size: 23px;
+}
+
+#toolInput1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 900px;
+  height: 30px;
+  background-color: "#7d9a08";
+}
+
+#toolBtn1 {
+  width: 110px;
+  height: 40px;
+  background-color: "#a0c808";
+}
+
+#desk {
+  display: flex;
+  width: fit-content;
+}

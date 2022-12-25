@@ -14,3 +14,7 @@
   text-decoration: none;
   margin: 30px;
 }
+
+#menuLi :hover {
+  color: rgb(117, 231, 47);
+}

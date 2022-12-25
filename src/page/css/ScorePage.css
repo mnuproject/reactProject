@@ -1,0 +1,29 @@
+#ScorePage {
+  width: 1500px;
+  height: 650px;
+  background-color: rgb(136, 136, 136);
+}
+
+#title3 {
+  width: 1390px;
+  margin: 50px;
+  font-size: 23px;
+}
+
+#toolInput3 {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 900px;
+  height: 30px;
+  background-color: "#7d9a08";
+}
+
+#toolBtn3 {
+  width: 110px;
+  height: 40px;
+  background-color: "#a0c808";
+}
+
+#toolText {
+  margin-left: 50px;
+}

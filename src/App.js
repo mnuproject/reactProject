@@ -6,10 +6,10 @@ import React from 'react';
 import { Route, Routes, Link } from "react-router-dom";
 
 import Home from './page/Home';
-import Page1 from './page/Page1';
-import Page2 from './page/Page2';
-import Page3 from './page/Page3';
-import Ref from './page/Ref';
+import TodoList from './page/TodoList';
+import DecoPage from './page/DecoPage';
+import ScorePage from './page/ScorePage';
+import Reference from './page/Reference';
 import './page/css/App.css';
 
 // ----------------------------------------------------------------------------------- firebase
@@ -143,29 +143,29 @@ function botReply(text) {
       window.location.replace("/");
       speak("메인 페이지로 이동합니다");
   }
-  else if (text.includes("학교")) {
-      window.location.replace("/page1");
-      speak("학교 페이지로 이동합니다");
+  else if (text.includes("투두리스트")) {
+      window.location.replace("/todoList");
+      speak("투두리스트 페이지로 이동합니다");
   }
-  else if (text.includes("도구")){
-      window.location.replace("/page2");
-      speak("도구 페이지로 이동합니다");
+  else if (text.includes("꾸미기")){
+      window.location.replace("/decoPage");
+      speak("꾸미기 페이지로 이동합니다");
   }
-  else if (text.includes("프로필")){
-      window.location.replace("/profile");
-      speak("프로필 페이지로 이동합니다");
+  else if (text.includes("학점 계산기")){
+      window.location.replace("/gradePage");
+      speak("학점 계산기 페이지로 이동합니다");
   }
   else if (text.includes("참고자료")){
-      window.location.replace("/ref");
+      window.location.replace("/reference");
       speak("참고자료 페이지로 이동합니다");
   }
   else if (text.includes("소개")){
-      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
-      speak("음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
+      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
+      speak("음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다");
   } 
   else {
-      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다";
-      speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 학교, 도구, 프로필, 참고자료 페이지로\n이동하실 수 있습니다");
+      document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
+      speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다");
   }
 }
 
@@ -176,19 +176,19 @@ function App() {
       <nav>
         <ul id="menuCss">
           <li><Link id="menuLi" to="/">홈</Link></li>
-          <li><Link id="menuLi" to="/page1">ToDoLIST</Link></li>
-          <li><Link id="menuLi" to="/page2">도구 페이지</Link></li>
-          <li><Link id="menuLi" to="/profile">프로필</Link></li>
-          <li><Link id="menuLi" to="/ref">참고자료</Link></li>
+          <li><Link id="menuLi" to="/todoList">ToDoLiST</Link></li>
+          <li><Link id="menuLi" to="/decoPage">꾸미기</Link></li>
+          <li><Link id="menuLi" to="/scorePage">학점 계산기</Link></li>
+          <li><Link id="menuLi" to="/reference">참고자료</Link></li>
         </ul>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<Page1 />} />
-        <Route path="/page2" element={<Page2 />} />
-        <Route path="/profile" element={<Page3 />} />
-        <Route path="/ref" element={<Ref />} />
+        <Route path="/todoList" element={<TodoList />} />
+        <Route path="/decoPage" element={<DecoPage />} />
+        <Route path="/scorePage" element={<ScorePage />} />
+        <Route path="/reference" element={<Reference />} />
       </Routes>
     </div>
   );
