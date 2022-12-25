@@ -176,7 +176,7 @@ function App() {
       <nav>
         <ul id="menuCss">
           <li><Link id="menuLi" to="/">홈</Link></li>
-          <li><Link id="menuLi" to="/page1">학교 페이지</Link></li>
+          <li><Link id="menuLi" to="/page1">ToDoLIST</Link></li>
           <li><Link id="menuLi" to="/page2">도구 페이지</Link></li>
           <li><Link id="menuLi" to="/profile">프로필</Link></li>
           <li><Link id="menuLi" to="/ref">참고자료</Link></li>
