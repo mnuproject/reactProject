@@ -149,12 +149,12 @@ function botReply(text) {
         speak("참고자료 페이지로 이동합니다");
     }
     else if (text.includes("소개")){
-        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
-        speak("음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다");
+        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지\n로 이동하실 수 있습니다";
+        speak("음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지\n로 이동하실 수 있습니다");
     } 
     else {
-        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
-        speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다");
+        document.getElementById("chatMsg").innerText = "음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지\n로 이동하실 수 있습니다";
+        speak("모르겠어요\n음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지\n로 이동하실 수 있습니다");
     }
   }
 
@@ -173,7 +173,7 @@ function bot() {
             speak(msg1);
         }, 10);
 
-        var msg2 = "음성인식이나 입력을 통해\n홈, 투두리스트, 도구, 학점 계산기, 참고자료 페이지로\n이동하실 수 있습니다";
+        var msg2 = "음성인식이나 입력을 통해\n홈, 투두리스트, 꾸미기, 학점 계산기, 참고자료 페이지\n로 이동하실 수 있습니다";
         setTimeout(function() {
             document.getElementById("chatMsg").innerText = msg2;
             speak(msg2);
