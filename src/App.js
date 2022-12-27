@@ -125,8 +125,8 @@ document.onkeydown=function(e){
   if(e.which == 32 && isCtrl == true) {
     try {
       document.getElementById("chatMsg").innerText = "음성인식 중입니다";
+    } catch (e) {}
       speechRecognize();
-    } catch (e) {}  
       return false;  
   }  
 }
@@ -152,7 +152,7 @@ function botReply(text) {
       speak("꾸미기 페이지로 이동합니다");
   }
   else if (text.includes("학점 계산기")){
-      window.location.replace("/gradePage");
+      window.location.replace("/scorePage");
       speak("학점 계산기 페이지로 이동합니다");
   }
   else if (text.includes("참고자료")){
