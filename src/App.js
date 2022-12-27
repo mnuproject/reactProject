@@ -125,8 +125,8 @@ document.onkeydown=function(e){
   if(e.which == 32 && isCtrl == true) {
     try {
       document.getElementById("chatMsg").innerText = "음성인식 중입니다";
-    } catch (e) {}  
       speechRecognize();
+    } catch (e) {}  
       return false;  
   }  
 }
