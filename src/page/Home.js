@@ -141,7 +141,7 @@ function botReply(text) {
         speak("꾸미기 페이지로 이동합니다");
     }
     else if (text.includes("학점 계산기")){
-        window.location.replace("/gradePage");
+        window.location.replace("/scorePage");
         speak("학점 계산기 페이지로 이동합니다");
     }
     else if (text.includes("참고자료")){
